@@ -13,12 +13,6 @@ header {
     background-color: #444; /* Slightly darker grey for header */
 }
 
-img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-}
-
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -35,6 +29,12 @@ main {
 
 #projects {
     text-align: center;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
 
 .project-card {
@@ -66,6 +66,14 @@ main {
     transition: opacity 0.8s ease-in-out;
 }
 
+.project-card img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin:0 auto;
+    border-radius: 10px;
+    max-height: 200px;
+}
 .project-card.show {
     opacity: 1; /* Set opacity to 1 for the fade-in effect */
 }
